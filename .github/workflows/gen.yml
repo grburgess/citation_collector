@@ -27,8 +27,8 @@ jobs:
       env:
         ADS_DEV_KEY: ${{ secrets.ADS_KEY }}
 
-    - name: Pushes to website
     - uses: cpina/github-action-push-to-another-repository@master
+    - name: Pushes to website
     - env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
       with:
