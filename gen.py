@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import ads
 from glob import glob
 #import ads.sandbox as ads
@@ -68,6 +70,9 @@ for doi in dois:
     pub_dates.append(search[0].pubdate)
     ids.append(search[0].id)
     
+
+p = Path("science_push")
+p.mkdir()
     
 for i, md in enumerate(files):
     
@@ -132,7 +137,13 @@ for i, md in enumerate(files):
     #info.append('#' abstracts[i])
     
     
-    with open('/Users/jburgess/coding/grburgess.github.io/_posts/science/%s'%new_name, 'w') as f:
+    # with open('/Users/jburgess/coding/grburgess.github.io/_posts/science/%s'%new_name, 'w') as f:
+    #     f.write(breaklines)
+    #     for ii in info:
+    #         f.write(ii)
+
+    
+    with open('science_push/%s'%new_name, 'w') as f:
         f.write(breaklines)
         for ii in info:
             f.write(ii)
