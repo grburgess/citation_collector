@@ -72,7 +72,7 @@ for doi in dois:
     
 
 p = Path("_posts/science/")
-p.mkdir()
+p.mkdir(parents=True)
     
 for i, md in enumerate(files):
     
