@@ -24,5 +24,8 @@ jobs:
 
         python gen.py
 
+      env:
+        ADS_DEV_KEY: ${{ secrets.ADS_KEY }}
+
     
         
