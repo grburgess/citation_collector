@@ -27,15 +27,15 @@ jobs:
       env:
         ADS_DEV_KEY: ${{ secrets.ADS_KEY }}
 
-    - uses: cpina/github-action-push-to-another-repository@master
     - name: Pushes to website
-    - env:
-        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+    - uses: cpina/github-action-push-to-another-repository@master
       with:
         source-directory: '_post/science'
         destination-github-username: 'grburgess'
         destination-repository-name: 'grburgess.github.io'
-        user-email: jmichaelburgess@gmail.com
+        user-email: jmichaelburgess@gmail.com    
+    - env:
+        API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
 
     
         
