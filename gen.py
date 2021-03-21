@@ -71,7 +71,7 @@ for doi in dois:
     ids.append(search[0].id)
     
 
-p = Path("science_push")
+p = Path("_posts/science/")
 p.mkdir()
     
 for i, md in enumerate(files):
@@ -143,7 +143,7 @@ for i, md in enumerate(files):
     #         f.write(ii)
 
     
-    with open('science_push/%s'%new_name, 'w') as f:
+    with open('_posts/science/%s'%new_name, 'w') as f:
         f.write(breaklines)
         for ii in info:
             f.write(ii)
