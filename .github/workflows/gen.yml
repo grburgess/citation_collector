@@ -29,7 +29,7 @@ jobs:
     - name: Pushes to website
       uses: cpina/github-action-push-to-another-repository@master
       with:
-        source-directory: '_post/science'
+        source-directory: '_posts/science'
         destination-github-username: 'grburgess'
         destination-repository-name: 'grburgess.github.io'
         user-email: jmichaelburgess@gmail.com    
